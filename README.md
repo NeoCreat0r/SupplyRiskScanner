@@ -42,9 +42,9 @@ SupplyRiskScanner.exe --path "./requirements.txt" --ecosystems "pypi" --out repo
 ```
 ### Сканировать C# проект и зависимость `NuGet`
 ```bash
-SupplyRiskScanner.exe --projects "./MyProject" --ecosystems "nuget" --out risk.jso
+SupplyRiskScanner.exe --path "./MyProject" --ecosystems "nuget" --out risk.json
 ```
 ### Смешанная проверка (PyPI + NuGet)
 ```bash
-SupplyRiskScanner.exe --path "./" --ecosystems "pypi,nuget" --out full-report.html
+SupplyRiskScanner.exe --path "./MyProject" --ecosystems "pypi,nuget" --out full-report.html
 ```
