@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>SupplyRiskScanner Report</title>
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.report-meta {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #222;
+    color: #fff;
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px 12px;
+    font-size: 14px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) td {
+    background: #f9fafc;
+}
+
+/* RISK COLORS */
+.low { color: #1cc88a; font-weight: bold; }
+.medium { color: #f6c23e; font-weight: bold; }
+.high { color: #e74a3b; font-weight: bold; }
+.critical { color: darkred; font-weight: bold; }
+
+</style>
+</head>
+<body>
+
+<h1>SupplyRiskScanner Report</h1>
+<div class='report-meta'>Generated at 2025-11-20 11:28:56Z</div>
+
+<table>
+<tr>
+    <th>Ecosystem</th>
+    <th>Package</th>
+    <th>Version</th>
+    <th>Last Release</th>
+    <th>Versions</th>
+    <th>Repo</th>
+    <th>Score</th>
+    <th>Level</th>
+    <th>Reasons</th>
+</tr>
+
+
+<tr>
+    <td>pypi</td>
+    <td>lxml</td>
+    <td>6.0.2</td>
+    <td>2025-09-22 04:04:59Z</td>
+    <td>120</td>
+    <td><a href='https://lxml.de/' target='_blank'>link</a></td>
+    <td>0</td>
+    <td class='low'>Low</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>pypi</td>
+    <td>requests</td>
+    <td>2.32.5</td>
+    <td>2025-08-18 20:46:02Z</td>
+    <td>157</td>
+    <td><a href='https://requests.readthedocs.io' target='_blank'>link</a></td>
+    <td>0</td>
+    <td class='low'>Low</td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>nuget</td>
+    <td>Newtonsoft.Json</td>
+    <td></td>
+    <td>-</td>
+    <td>0</td>
+    <td>-</td>
+    <td>80</td>
+    <td class='critical'>Critical</td>
+    <td>No release information available; Only 1 or no released versions; No repository URL provided</td>
+</tr>
+</table>
+</body></html>
